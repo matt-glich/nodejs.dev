@@ -8,7 +8,7 @@
     "@mdx-js/mdx": "^1.6.18",
     "@mdx-js/react": "^1.6.18",
     "@smotaal.io/dark-mode-controller": "<0.5",
-    "@storybook/addon-actions": "^5.3.19",
+    "@storybook/addon-actions": "^9.0.0",
     "@storybook/addon-links": "^5.3.19",
     "@storybook/addons": "^5.3.19",
     "@storybook/react": "^5.3.19",
