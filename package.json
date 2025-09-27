@@ -42,7 +42,8 @@
     "react-helmet": "^6.0.0",
     "react-tabs": "3.1.0",
     "throttle-debounce": "^2.3.0",
-    "typescript": "3.9.2"
+    "typescript": "3.9.2",
+    "@snyk/protect": "latest"
   },
   "keywords": [
     "gatsby",
@@ -67,7 +68,9 @@
     "serve": "npm run build && clear && gatsby serve",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook -o ./public/storybook",
-    "a11y": "./node_modules/pa11y/bin/pa11y.js localhost:8000"
+    "a11y": "./node_modules/pa11y/bin/pa11y.js localhost:8000",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
@@ -133,5 +136,6 @@
     "collectCoverageFrom": [
       "src/**/**.(ts|tsx|js)"
     ]
-  }
+  },
+  "snyk": true
 }
