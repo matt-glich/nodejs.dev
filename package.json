@@ -18,11 +18,11 @@
     "color-string": "^1.5.3",
     "dompurify": "2.0.12",
     "dotenv": "^8.2.0",
-    "gatsby": "^2.21.11",
+    "gatsby": "^4.0.0",
     "gatsby-plugin-canonical-urls": "^2.2.3",
     "gatsby-plugin-catch-links": "^2.2.1",
     "gatsby-plugin-manifest": "^2.4.0",
-    "gatsby-plugin-mdx": "^1.2.40",
+    "gatsby-plugin-mdx": "^4.0.0",
     "gatsby-plugin-meta-redirect": "^1.1.1",
     "gatsby-plugin-offline": "^3.1.2",
     "gatsby-plugin-react-helmet": "^3.2.4",
@@ -42,7 +42,8 @@
     "react-helmet": "^6.0.0",
     "react-tabs": "3.1.0",
     "throttle-debounce": "^2.3.0",
-    "typescript": "3.9.2"
+    "typescript": "3.9.2",
+    "@snyk/protect": "latest"
   },
   "keywords": [
     "gatsby",
@@ -67,7 +68,9 @@
     "serve": "npm run build && clear && gatsby serve",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook -o ./public/storybook",
-    "a11y": "./node_modules/pa11y/bin/pa11y.js localhost:8000"
+    "a11y": "./node_modules/pa11y/bin/pa11y.js localhost:8000",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
@@ -133,5 +136,6 @@
     "collectCoverageFrom": [
       "src/**/**.(ts|tsx|js)"
     ]
-  }
+  },
+  "snyk": true
 }
