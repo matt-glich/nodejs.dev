@@ -1,0 +1,16 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.25.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-567746:
+    - gatsby-plugin-mdx > @babel/core > lodash:
+        patched: '2026-01-10T11:41:31.670Z'
+        id: SNYK-JS-LODASH-567746
+        path: gatsby-plugin-mdx > @babel/core > lodash
+    - gatsby-plugin-mdx > @babel/core > @babel/helper-module-transforms > lodash:
+        patched: '2026-01-10T11:41:31.670Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          gatsby-plugin-mdx > @babel/core > @babel/helper-module-transforms >
+          lodash
